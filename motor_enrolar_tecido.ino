@@ -47,14 +47,14 @@ void loop() {
 
   if ((luminosidade > 1010) && (estado_botao_acionador == LOW)){
 
-    Serial.println("LUMINOSIDADE BAIXA E BOTÃO PRESSIONADO - LED E RELÉ ACIONADOS! \n");
+    //Serial.println("LUMINOSIDADE BAIXA E BOTÃO PRESSIONADO - LED E RELÉ ACIONADOS! \n");
 
     digitalWrite(led_pin,HIGH);
     digitalWrite(rele_pin,HIGH);
   }
   else{
 
-    Serial.println("LUMINOSIDADE ALTA - LED E RELÉ DESLIGADOS! \n");
+    //Serial.println("LUMINOSIDADE ALTA - LED E RELÉ DESLIGADOS! \n");
     
     digitalWrite(led_pin,LOW);
     digitalWrite(rele_pin,LOW);
